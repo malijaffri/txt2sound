@@ -1,4 +1,10 @@
-# txt2sound
+---
+runme:
+  id: 01HK22N242K6VSHG7Z0T33BFG1
+  version: v2.0
+---
+
+# text2sound
 
 Convert ASCII string to tonal frequencies.
 
