@@ -1,13 +1,10 @@
-# credits:
-#     freq2sound: https://stackoverflow.com/a/27978895
-#     stream_sound: https://stackoverflow.com/a/27978895
-#     bytearray: https://stackoverflow.com/a/28130794
+#!/usr/bin/python3
 
-import io, pyaudio, numpy, wave
+import pyaudio, numpy
 
 sampling_rate: int = 44100
 
-def freq2sound(freq: float, duration: float = 0.5, volume: float = 0.5, sampling_rate: int = sampling_rate) -> bytes:
+def freq2sound(freq: float, duration: float = 0.25, volume: float = 0.5, sampling_rate: int = sampling_rate) -> bytes:
 	samples = (numpy.sin(2 * numpy.pi * numpy.arange(sampling_rate * duration) * freq / sampling_rate)).astype(numpy.float32)
 	return (volume * samples).tobytes()
 
