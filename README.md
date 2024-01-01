@@ -1,4 +1,4 @@
-# text2sound
+# txt2sound
 
 Convert ASCII string to tonal frequencies.
 
